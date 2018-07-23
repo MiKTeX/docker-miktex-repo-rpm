@@ -10,7 +10,7 @@ set command=%1
 set signer=Donald Duck
 set keygrip=9BBBFFBA432BD13D1DF8C7E81E1A17B0D4E34D62
 set passphrase=test
-docker run --rm -t ^
+docker run --rm -ti ^
   -v %~dp0rpms:/miktex/rpms:ro ^
   -v %~dp0signing.sec:/miktex/signing.sec:ro ^
   -v %~dp0repo:/miktex/repo:rw ^
